@@ -11,6 +11,8 @@ import Header from "./components/header/Header";
 // import Footer from "./components/footer/Footer";
 import ErrorPage from "./components/errorpage/ErrorPage";
 import AddStudent from "./components/lists/AddStudent";
+import StudentDetails from "./components/lists/StudentDetails";
+
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
           <Route path="Demo1" element={<Demo1 />} />
           <Route path="Lists" element={<Lists />} />
           <Route path="AddStudent" element={<AddStudent />} />
-
+          <Route path="AddStudent/:rollNo" component={StudentDetails} /> {/* Add this route */}
           <Route path="Error" element={<ErrorPage />} />
         </Routes>
         {/* <Footer /> */}

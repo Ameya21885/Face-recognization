@@ -153,8 +153,7 @@ function Demo1() {
     if (matchedPerson) {
       try {
         // Replace 'YOUR_API_ENDPOINT' with the actual endpoint where you want to send the data.
-        const apiUrl = 'YOUR_API_ENDPOINT';
-
+        const apiUrl = 'http://localhost:7171/api/students';
         const requestData = {
           name: matchedPerson.name,
           rollNo: matchedPerson.id,

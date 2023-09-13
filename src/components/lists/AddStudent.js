@@ -82,7 +82,7 @@ function AddStudent() {
             formDataToSend.append("attendance", formData.attendance);
             formDataToSend.append("photo", formData.photo);
     
-            const apiUrl = "YOUR_API_ENDPOINT";
+            const apiUrl = "http://localhost:9595/api/students";
     
             await axios.post(apiUrl, formDataToSend);
     
